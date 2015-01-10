@@ -45,7 +45,6 @@ C:\Users\Home\documents\visual studio 2013\Projects\ProjLife Zain Test\ProjLife 
 C:\Users\Home\documents\visual studio 2013\Projects\ProjLife Zain Test\ProjLife Zain Test\bin\System.Net.Http.Primitives.xml
 C:\Users\Home\documents\visual studio 2013\Projects\ProjLife Zain Test\ProjLife Zain Test\bin\Zlib.Portable.xml
 C:\Users\Home\documents\visual studio 2013\Projects\ProjLife Zain Test\ProjLife Zain Test\obj\Debug\ProjLife Zain Test.csproj.App.config
-C:\Users\Home\documents\visual studio 2013\Projects\ProjLife Zain Test\ProjLife Zain Test\obj\Debug\ProjLife Zain Test.csprojResolveAssemblyReference.cache
 C:\Users\Home\documents\visual studio 2013\Projects\ProjLife Zain Test\ProjLife Zain Test\obj\Debug\ProjLife Zain Test.dll
 C:\Users\Home\documents\visual studio 2013\Projects\ProjLife Zain Test\ProjLife Zain Test\obj\Debug\ProjLife Zain Test.pdb
 C:\Users\Home\Documents\Visual Studio 2013\Projects\ProjLife Zain Test\ProjLife Zain Test\bin\Google.Apis.Oauth2.v2.dll

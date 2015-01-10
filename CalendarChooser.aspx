@@ -42,6 +42,16 @@
             </FooterTemplate>
         </asp:Repeater>
     </asp:Panel>
+        <asp:Panel runat="server" ID="pnlNewEvent" Visible="false" CssClass="padding-top: 5cm;">
+                <asp:Label runat="server" ID="lblNewEventSummary" Text="Event Name"></asp:Label>
+                <asp:TextBox runat="server" ID="tbxNewEventSummary"></asp:TextBox>
+                <br />
+                <asp:Label runat="server" ID="lblNewEventStartTime" Text="Start Time"></asp:Label>
+                <asp:Calendar ID="cldrNewEventStartTime" runat="server"></asp:Calendar>
+                <asp:Label runat="server" ID="lblNewEventEndTime" Text="End Time"></asp:Label>
+                <asp:Calendar ID="cldrNewEventEndTime" runat="server"></asp:Calendar>
+                <asp:Button runat="server" ID="btnNewEvent" Text="Add New Event" OnClick="btnNewEvent_Click"/>
+        </asp:Panel>
     </form>
 </body>
 </html>

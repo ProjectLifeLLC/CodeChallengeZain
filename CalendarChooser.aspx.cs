@@ -12,7 +12,7 @@ using Google.Apis.Calendar.v3.Data;
 using System.Web.UI.HtmlControls;
 
 //My Helper
-using ProjLife_Zain_Test.Add_Code;
+using ProjLife_Zain_Test.App_Code;
 
 namespace ProjLife_Zain_Test
 {
@@ -60,7 +60,9 @@ namespace ProjLife_Zain_Test
             var calList = calhelp.CalendarService.Events.List(ddCalendarsList.SelectedValue);
             rptCalendarView.DataSource = calList.Execute().Items;
             rptCalendarView.DataBind();
+            Session["CalendarName"] = ddCalendarsList.SelectedValue;
             rptCalendarView.Visible = true;
+            pnlNewEvent.Visible = true;
         }
 
         protected void rptCalendarView_ItemDataBound(object sender, RepeaterItemEventArgs e)
@@ -76,6 +78,23 @@ namespace ProjLife_Zain_Test
                 StartTime.Text = ((EventDateTime)CurrentEvent.Start).DateTime.ToString();
                 EndTime.Text = ((EventDateTime)CurrentEvent.End).DateTime.ToString();
             }
+        }
+
+        protected void btnNewEvent_Click(object sender, EventArgs e)
+        {
+            Event NewEvent = new Event();
+            NewEvent.Summary = tbxNewEventSummary.Text;
+            NewEvent.Start = new EventDateTime()
+            {
+                DateTime = cldrNewEventStartTime.SelectedDate
+            };
+            NewEvent.End = new EventDateTime()
+            {
+                DateTime = cldrNewEventEndTime.SelectedDate
+            };
+            var request = calhelp.CalendarService.Events.Insert(NewEvent, Session["CalendarName"].ToString());
+            request.Execute();
+            rptCalendarView.DataBind();
         }
     }
 }

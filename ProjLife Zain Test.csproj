@@ -142,8 +142,8 @@
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add_Code\DataBaseDataStore.cs" />
-    <Compile Include="Add_Code\GoogleCalendarHelper.cs" />
+    <Compile Include="App_Code\DataBaseDataStore.cs" />
+    <Compile Include="App_Code\GoogleCalendarHelper.cs" />
     <Compile Include="CalendarChooser.aspx.cs">
       <DependentUpon>CalendarChooser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

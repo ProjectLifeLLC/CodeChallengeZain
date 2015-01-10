@@ -5,7 +5,7 @@ using System.Web;
 using Google.Apis.Util.Store;
 using System.Web.Configuration;
 
-namespace ProjLife_Zain_Test.Add_Code
+namespace ProjLife_Zain_Test.App_Code
 {
     //This file is pretty much a cleaner version of:
     //https://code.google.com/p/google-api-dotnet-client/source/browse/Src/GoogleApis.DotNet4/Apis/Util/Store/FileDataStore.cs
